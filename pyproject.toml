@@ -3,14 +3,16 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project]
-name = "chaostoolkit-extension-template"
+name = "chaostoolkit-utils"
 dynamic = ["version"]
-description = "Template project for Chaos Toolkit extensions"
+description = "Misc utilities that help design chaostoolkit-based experiments"
 authors = [
-    {name = "Sylvain Hellegouarch", email = "sh@defuze.org"},
+    {name = "Mattias Cockburn Chaparro", email = "m.cc@posteo.net"},
 ]
 dependencies = [
-    "chaostoolkit-lib>=1.37",
+    "chaostoolkit-lib>=1.39",
+    "jinja2>=3.1.2",
+    "logzero>=1.7.0",
 ]
 requires-python = ">=3.7"
 readme = "README.md"
@@ -34,8 +36,8 @@ classifiers = [
 
 [project.urls]
 documentation = "https://chaostoolkit.org"
-repository = "https://github.com/chaostoolkit/chaostoolkit-extension-template"
-changelog = "https://github.com/chaostoolkit/chaostoolkit-extension-template/blob/master/CHANGELOG.md"
+repository = "https://github.com/mattiascockburn/chaostoolkit-utils"
+changelog = "https://github.com/mattiascockburn/chaostoolkit-utils/blob/master/CHANGELOG.md"
 
 [tool]
 
